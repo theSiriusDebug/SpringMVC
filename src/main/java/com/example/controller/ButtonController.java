@@ -3,11 +3,12 @@ package com.example.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class ButtonController {
 
-    @GetMapping("/")
+    @GetMapping("")
     public String index() {
         return "index";
     }
@@ -20,8 +21,9 @@ public class ButtonController {
 
     @GetMapping("/bye")
     public String bye(Model model) {
-        model.addAttribute("message", "Пока");
+        model.addAttribute("message", "bye");
         return "message";
     }
+
 }
 
