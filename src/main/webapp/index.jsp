@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Пример кнопок</title>
+    <title>Button</title>
 </head>
 <body>
-    <h1>Выберите действие:</h1>
+    <h1>choose an action:</h1>
     <form method="get" action="/hello">
-        <button type="submit">Привет</button>
+        <button type="submit">hello</button>
     </form>
     <form method="get" action="/bye">
-        <button type="submit">Пока</button>
+        <button type="submit">bay</button>
     </form>
 </body>
 </html>
